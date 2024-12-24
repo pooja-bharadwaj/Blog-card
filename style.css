@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap');
+body{
+    background-color: hsl(47, 88%, 63%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog-card{
+    height: 536px;
+    width: 380px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 12px 10px 0px 0px black;
+    background-color:  hsl(0, 0%, 100%);
+    font-family: "Figtree", serif;
+}
+.contents{
+    padding: 5px;
+}
+.svg-img{
+    padding: 20px 20px 20px 20px;
+}
+.svg-img svg{
+    border: none;
+    border-radius: 15px;
+}
+.capsule{
+    padding: 10px 0px 0px 20px;
+}
+.capsule button{
+    background-color:  hsl(47, 88%, 63%);
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.content{
+    padding-left: 20px
+}
+.content h2{
+    font-weight: 800;
+}
+.content h2:hover{
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+.content p{
+    font-weight: 500;
+    color:hsl(0, 0%, 42%);
+}
+.avatar{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center; 
+    padding-left: 20px;
+    font-weight: 800;
+     
+}
+.avatar .img img{
+    width: 30px;
+    height: 30px;
+}
+
+/* For Mobile */
+@media(max-width: 375px){
+    .blog-card{
+        width: 90%;
+        height: auto;
+        font-size: 14px;
+    }
+    
+    .svg-img svg{
+        width: 100%;
+        height: auto;
+    }
+    .capsule button{
+        font-size: 12px;
+        padding: 5px 6px;
+    }
+    
+
+}
+
+/* For Desktop */
+@media (min-width: 1444px) {
+
+    .blog-card {
+        font-size: 16px;
+        height: 620px;
+        width: 453px;
+    }
+
+    .svg-img svg {
+        width: 100%;
+        height: auto;
+    }
+
+    .capsule button {
+        font-size: 16px;
+        padding: 10px 15px; 
+    }
+
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .avatar {
+        gap: 15px;
+    }
+
+    .avatar p{
+        font-size: 18px;
+    }
+
+    .avatar .img img {
+        width: 50px;
+        height: 50px;
+    }
+}
